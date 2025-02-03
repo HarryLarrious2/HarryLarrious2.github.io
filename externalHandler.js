@@ -5,6 +5,9 @@ window.addEventListener('message', function(event) {
     // Process the received data
     var receivedData = event.data;
     
+    // Print the message to console
+    console.log('Message received from ' + event.origin + ':', receivedData);
+
     // Display the message in the list
     var messageList = document.getElementById('messageList');
     var messageItem = document.createElement('p');
